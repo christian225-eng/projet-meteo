@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    transition: background-image 0.5s ease;
+}
+
+.prevision-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+}
+
+.prevision-hour {
+    min-width: 80px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.day-theme {
+    background: linear-gradient(to bottom, #87CEEB, #E0F7FA);
+}
+
+.night-theme {
+    background: linear-gradient(to bottom, #0F0524, #2C3E50);
+    color: white;
+}
+
+
+.thunder-back {
+    background: url('/image/meteo-assets/img/thunder.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.rain-back {
+    background: url('/image/meteo-assets/img/rain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.snow-back {
+    background: url('/image/meteo-assets/img/snow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sunny-back {
+    background: url('/image/meteo-assets/img/sun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.cloudy-day-back {
+    background: url('/image/meteo-assets/img/suncloud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cloudy-night-back {
+    background: url('/image/meteo-assets/img/cloud.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.default-back {
+    background: url('/image/meteo-assets/img/sun.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.prevision-hour {
+    min-width: 80px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.hour {
+    font-weight: bold;
+}
+
+.temp {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
